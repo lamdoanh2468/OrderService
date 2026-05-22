@@ -1,9 +1,9 @@
 package com.furniro.OrderService.service;
 
-import com.furniro.OrderService.database.entity.Cart;
-import com.furniro.OrderService.database.entity.CartItem;
-import com.furniro.OrderService.database.repository.CartItemRepository;
-import com.furniro.OrderService.database.repository.CartRepository;
+import com.furniro.OrderService.database.entity.cart.Cart;
+import com.furniro.OrderService.database.entity.cart.CartItem;
+import com.furniro.OrderService.database.repository.cart.CartItemRepository;
+import com.furniro.OrderService.database.repository.cart.CartRepository;
 import com.furniro.OrderService.dto.API.AType;
 import com.furniro.OrderService.dto.API.ApiType;
 import com.furniro.OrderService.dto.req.AddToCartReq;

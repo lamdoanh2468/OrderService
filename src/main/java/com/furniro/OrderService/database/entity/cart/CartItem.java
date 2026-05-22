@@ -1,4 +1,4 @@
-package com.furniro.OrderService.database.entity;
+package com.furniro.OrderService.database.entity.cart;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

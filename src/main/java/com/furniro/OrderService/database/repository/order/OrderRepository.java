@@ -1,0 +1,16 @@
+package com.furniro.OrderService.database.repository.order;
+
+import com.furniro.OrderService.database.entity.order.Order;
+import com.furniro.OrderService.utils.enums.OrderStatus;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface OrderRepository extends JpaRepository<Order,Integer> {
+    List<Order> findByUserID(Integer userID);
+    Page<Order> findByUserID(Integer userID, Pageable pageable);
+    Page<Order> findByStatus(OrderStatus status, Pageable pageable);
+    Page<Order> findByStatusAndUserID(OrderStatus status, Integer userID, Pageable pageable);
+}

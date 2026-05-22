@@ -1,7 +1,7 @@
-package com.furniro.OrderService.database.repository;
+package com.furniro.OrderService.database.repository.cart;
 
-import com.furniro.OrderService.database.entity.Cart;
-import com.furniro.OrderService.database.entity.CartItem;
+import com.furniro.OrderService.database.entity.cart.Cart;
+import com.furniro.OrderService.database.entity.cart.CartItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
